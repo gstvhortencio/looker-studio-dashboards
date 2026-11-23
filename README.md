@@ -3,11 +3,47 @@
 [![Looker Studio](https://img.shields.io/badge/Looker%20Studio-4285F4?logo=looker&logoColor=white)](https://lookerstudio.google.com/)
 [![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)](LICENSE)
 
-Relatórios construídos no Looker Studio durante o curso de **Analista de Dados da EBAC**.
+Relatórios construídos no Looker Studio durante o curso de **Analista de Dados da EBAC**, incluindo o projeto de parceria EBAC × Semantix.
 
 > 🇬🇧 English version: [README.en.md](README.en.md)
 
 Relatórios do Looker Studio vivem na nuvem: não há arquivo a baixar. O que este repositório guarda é o **link vivo**, as capturas de cada página e a documentação de como cada dashboard foi montado.
+
+---
+
+## Inadimplência das famílias brasileiras
+
+**[▶ Abrir o relatório](https://datastudio.google.com/reporting/863e566d-9912-46a7-b902-ac9d8ac9dbeb)** · [PDF](https://github.com/gstvhortencio/inadimplencia-familias-br/blob/main/docs/looker_studio_relatorio.pdf) · [Repositório do projeto](https://github.com/gstvhortencio/inadimplencia-familias-br)
+
+> O Looker Studio pede login em uma conta Google. Sem login, use o PDF.
+
+![Visão geral do dashboard de inadimplência](inadimplencia-familias/img/01-visao-geral.png)
+
+Projeto de parceria **EBAC × Semantix**: seis páginas sobre a inadimplência no crédito a pessoas físicas, com dados do SCR.data (Banco Central) de jan/2025 a set/2026 e séries do SGS. Filtros de escopo do crédito, região e período em todas as páginas.
+
+| Página | Conclusão |
+|---|---|
+| Visão geral | No crédito de consumo e habitação, a inadimplência subiu de 3,3% para 4,5% em 21 meses |
+| Produtos | Rotativo (21%), cheque especial (15%) e cartão parcelado (14%) concentram o risco |
+| Estados | O Norte lidera; a Paraíba tem a segunda menor taxa do país (3,6%) |
+| Perfil do tomador | Sem renda declarada: 15,1% em atraso, contra 2,5% a 7,3% nas faixas com renda |
+| Crescimento × risco | Fintechs mais que dobraram a carteira, e a taxa foi de 11,2% para 21,2% |
+| Recomendações | Sete ações para instituições, governo e famílias |
+
+A decisão de análise mais importante está no filtro de escopo: crédito rural e um saldo legado de cartão respondem por quase metade da alta no total de pessoa física. Misturados ao consumo das famílias, eles distorcem o diagnóstico, por isso ficam fora no padrão.
+
+<details>
+<summary>Ver as outras páginas</summary>
+
+![Produtos](inadimplencia-familias/img/02-produtos.png)
+![Estados](inadimplencia-familias/img/03-estados.png)
+![Perfil do tomador](inadimplencia-familias/img/04-perfil.png)
+![Crescimento × risco](inadimplencia-familias/img/05-crescimento-risco.png)
+![Recomendações](inadimplencia-familias/img/06-recomendacoes.png)
+
+</details>
+
+📄 **[Documentação completa e pontos a revisar](docs/inadimplencia-familias.md)**
 
 ---
 
@@ -70,11 +106,14 @@ O cartão de usuários usa `Usuários ativos` e não `Usuários ativos por 7 dia
 looker-studio-dashboards/
 ├── README.md / README.en.md
 ├── LICENSE
+├── inadimplencia-familias/
+│   └── img/                       6 capturas, uma por página
 ├── ecommerce-gatito/
 │   └── img/
 │       ├── 01-visao-geral.png
 │       └── 02-comportamento-usuario.png
 └── docs/
+    ├── inadimplencia-familias.md
     └── ecommerce-gatito.md
 ```
 
@@ -86,7 +125,7 @@ Novos relatórios do Looker Studio entram como subpastas próprias conforme o cu
 
 [![GitHub](https://img.shields.io/badge/GitHub-gstvhortencio-181717?logo=github&logoColor=white)](https://github.com/gstvhortencio)
 
-📊 Dashboard em Power BI: [powerbi-dashboard-vendas](https://github.com/gstvhortencio/powerbi-dashboard-vendas)
+📊 Dashboards em Power BI: [powerbi-dashboards](https://github.com/gstvhortencio/powerbi-dashboards)
 📚 Anotações do curso: [ebac-analise-de-dados](https://github.com/gstvhortencio/ebac-analise-de-dados)
 
 ## Licença
